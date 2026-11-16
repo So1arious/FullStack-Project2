@@ -1,0 +1,474 @@
+.outline {
+  background: #eaf7ff;
+  color: #176b99;
+  border-color: #b9dff3;
+}
+.outline:hover {
+  background: #d7f0ff;
+}
+.settings .primary {
+  width: 100%;
+  margin-top: 2px;
+}
+.status {
+  font-size: 12px;
+  color: #5e8195;
+  margin: 13px 0 0;
+}
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.metric {
+  background: #eef9ff;
+  border: 1px solid #d3ebf8;
+  border-radius: 14px;
+  padding: 20px 14px;
+}
+.metric strong {
+  display: block;
+  font-size: 31px;
+  color: #1973a6;
+  line-height: 1.2;
+}
+.metric span {
+  display: block;
+  font-size: 12px;
+  color: #587d93;
+  margin-top: 8px;
+}
+.info {
+  margin-top: 26px;
+  padding: 23px;
+  border-radius: 14px;
+  background: #f7fcff;
+  border: 1px solid #e0eff8;
+}
+.info h3 {
+  margin: 0 0 8px;
+  color: var(--deep);
+}
+.info p {
+  margin: 0;
+  color: #56758a;
+  font-size: 14px;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.topic-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 7px;
+  padding: 20px;
+  border-radius: 13px;
+  background: #f4fbff;
+  border: 1px solid #d4eaf7;
+  color: var(--text);
+}
+.topic-card:hover {
+  background: #e3f5ff;
+  border-color: #9bd1ef;
+}
+.topic-number {
+  font-size: 12px;
+  font-weight: bold;
+  color: #348fbe;
+}
+.topic-card strong {
+  font-size: 16px;
+}
+.topic-card span:not(.topic-number) {
+  font-size: 12px;
+  color: var(--muted);
+}
+.topic-card .topic-link {
+  color: #197bb2 !important;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.preview-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 18px;
+  margin-bottom: 22px;
+}
+.preview-toolbar h2 {
+  margin: 6px 0 0;
+  color: var(--deep);
+}
+.preview-toolbar .actions {
+  margin: 0;
+}
+.compact {
+  white-space: nowrap;
+}
+.placeholder {
+  text-align: center;
+  padding: 65px 20px;
+  background: #f3fbff;
+  border: 1px dashed #b9ddf0;
+  border-radius: 13px;
+  color: #66879a;
+}
+.test-meta {
+  padding: 15px 0;
+  border-bottom: 2px solid #cde7f6;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.test-meta p {
+  margin: 7px 0;
+}
+.question {
+  padding: 18px 0;
+  border-bottom: 1px solid #e1edf4;
+  break-inside: avoid;
+}
+.question p {
+  margin: 9px 0;
+  font-size: 16px;
+}
+.question-label {
+  font-size: 12px;
+  color: #6b8b9d;
+}
+.point-label {
+  font-size: 12px;
+  color: #658499;
+}
+.answer-space {
+  height: 55px;
+  border-bottom: 1px dotted #c3d8e4;
+}
+.key-row {
+  padding: 13px 0;
+  border-bottom: 1px solid #e0edf5;
+  break-inside: avoid;
+}
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #7892a2;
+  font-size: 12px;
+}
+@media (max-width: 850px) {
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+  .hero-icon {
+    display: none;
+  }
+  .welcome {
+    padding: 27px;
+  }
+  .preview-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+@media (max-width: 520px) {
+  .header-tag {
+    display: none;
+  }
+  .card {
+    padding: 20px;
+  }
+  .metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+  .topic-grid {
+    grid-template-columns: 1fr;
+  }
+  .tabs {
+    gap: 5px;
+  }
+  .tab {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  .two-fields {
+    grid-template-columns: 1fr;
+  }
+}
+@media print {
+  body {
+    background: white;
+  }
+  header,
+  .welcome,
+  .tabs,
+  footer,
+  .preview-toolbar .actions,
+  .settings,
+  .overview {
+    display: none !important;
+  }
+  main {
+    padding: 0;
+    max-width: none;
+  }
+  .card {
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
+  .tab-panel {
+    display: none !important;
+  }
+  .tab-panel.active {
+    display: block !important;
+  }
+  .question {
+    break-inside: avoid;
+  }
+  .paper {
+    border: none;
+  }
+}
+/* Blue-only hard override */
+:root {
+  color-scheme: light;
+}
+button.primary {
+  background: #167cbb !important;
+  color: #fff !important;
+}
+body {
+  background: #f0f9ff !important;
+}
+header.topbar {
+  background: #d8efff !important;
+}
+.welcome {
+  background: linear-gradient(115deg, #d2edff, #f4fbff) !important;
+}
+</style>
+<style>
+/* Student response windows and built-in calculus tutor */
+.student-work {
+  margin-top: 14px;
+  padding: 14px;
+  border: 1px solid #c9d9ef;
+  border-radius: 12px;
+  background: #f4f8ff;
+}
+.student-work label {
+  display: block;
+  font-weight: 650;
+  margin-bottom: 8px;
+  color: #17375e;
+}
+.student-answer {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 85px;
+  padding: 12px;
+  border: 1px solid #a9bfdd;
+  border-radius: 8px;
+  background: white;
+  font: inherit;
+  resize: vertical;
+  color: #17263b;
+}
+.student-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 9px;
+}
+.student-controls button,
+#chat-send {
+  border: 0;
+  border-radius: 8px;
+  padding: 9px 13px;
+  cursor: pointer;
+  background: #2057a4;
+  color: white;
+  font: inherit;
+  font-weight: 600;
+}
+.student-controls .ask-question {
+  background: #0b7775;
+}
+.answer-feedback {
+  margin-top: 9px;
+  font-weight: 600;
+}
+.answer-feedback.correct {
+  color: #176537;
+}
+.answer-feedback.incorrect {
+  color: #9a3c1c;
+}
+.chat-panel {
+  margin-top: 22px;
+  padding: 20px;
+  border: 1px solid #bbd3e9;
+  border-radius: 14px;
+  background: #eef6ff;
+}
+.chat-panel h3 {
+  margin: 0 0 6px;
+  color: #183b67;
+}
+.chat-panel p {
+  margin: 0 0 12px;
+}
+.chat-history {
+  max-height: 400px;
+  overflow: auto;
+  background: white;
+  border: 1px solid #d0ddec;
+  border-radius: 10px;
+  padding: 12px;
+  min-height: 75px;
+  margin-bottom: 12px;
+}
+.chat-message {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  padding: 11px;
+  margin: 7px 0;
+  border-radius: 9px;
+  background: #edf3fc;
+}
+.chat-message.student {
+  background: #dff5ee;
+}
+.chat-question,
+.chat-input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #b4c9df;
+  border-radius: 8px;
+  padding: 10px;
+  font: inherit;
+  margin-bottom: 9px;
+  background: white;
+  color: #17263b;
+}
+@media print {
+  .student-controls,
+  .answer-feedback,
+  .chat-panel {
+    display: none !important;
+  }
+  .student-work {
+    background: white;
+    border: 1px solid #ccc;
+  }
+  .student-answer {
+    border: 1px solid #bbb;
+  }
+}
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">
+      <span class="logo-mark">∫</span>
+      <div>
+        <strong>Calculus Test Generator</strong>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <div>
+        <span class="eyebrow">ASSESSMENT DESIGN MADE SIMPLE</span>
+        <h1>Create your calculus tests.</h1>
+        <p>
+          Choose a topic, configure your assessment, and create a printable test
+          with a separate instructor answer key.
+        </p>
+      </div>
+      <div class="hero-icon">∫ f(x) dx</div>
+    </section>
+
+    <nav aria-label="Workspace sections" class="tabs">
+      <button class="tab active" data-tab="builder" type="button">Test Builder</button>
+      <button class="tab" data-tab="topics" type="button">Browse Topics</button>
+      <button class="tab" data-tab="preview" type="button">Test Preview</button>
+      <button class="tab" data-tab="answers" type="button">Answer Key</button>
+    </nav>
+
+    <section class="tab-panel active" id="builder">
+      <div class="workspace">
+        <aside class="card settings">
+          <div class="section-heading">
+            <span class="step">01</span>
+            <div>
+              <h2>Test Settings</h2>
+              <p>Customize your assessment</p>
+            </div>
+          </div>
+
+          <label for="topic">Calculus topic</label>
+          <select id="topic">
+            <option value="ALL">All topics (mixed test)</option>
+          </select>
+
+          <label for="count">Number of questions</label>
+          <select id="count">
+            <option value="5">5 questions</option>
+            <option selected="" value="10">10 questions</option>
+            <option value="15">15 questions</option>
+            <option value="20">20 questions</option>
+            <option value="30">30 questions</option>
+          </select>
+
+          <label for="title">Test title</label>
+          <input id="title" maxlength="90" value="Calculus Assessment" />
+
+          <div class="two-fields">
+            <div>
+              <label for="duration">Duration (minutes)</label>
+              <input id="duration" max="300" min="1" type="number" value="60" />
+            </div>
+            <div>
+              <label for="points">Points per question</label>
+              <input id="points" max="100" min="1" type="number" value="5" />
+            </div>
+          </div>
+
+          <label class="check">
+            <input checked="" id="shuffle" type="checkbox" />
+            <span>Shuffle questions</span>
+          </label>
+
+          <button class="primary" id="generate" type="button">Generate Test →</button>
+          <p class="status" id="status" role="status">Ready to generate your test.</p>
+        </aside>
+
+        <div class="card overview">
+          <div class="section-heading">
+            <span class="step">02</span>
+            <div>
+              <h2>Assessment Overview</h2>
+              <p>Your test at a glance</p>
+            </div>
+          </div>
+
+          <div class="metrics">
+            <div class="metric">
+              <strong id="metric-topics">10</strong>
+              <span>Calculus topics</span>
+            </div>
+            <div class="metric">
+              <strong id
