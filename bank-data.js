@@ -102,6 +102,22 @@ window.Algebra_BANK = {
   "(3a²+2b) / (a-b)   Given a = 4, b = 2",
   "26"
 ]  
-    
-    
-    
+// 3rd topic
+"Polynomial": [
+[
+  "Polynomial Subtraction",
+  "Simplify (5x³ - 3x² + 4x - 7) - (2x³ + 6x² - x + 5).",
+  "3x³ - 9x² + 5x - 12"
+],
+[  
+  "Polynomial Multiplication",
+  "Expand and simplify (2x - 3)(x² + 4x - 5).",
+  "2x³ + 5x² - 22x + 15"
+],
+[
+  "Factoring Polynomials",
+  "Factor the polynomial 3x⁴ - 24x completely over the real numbers.",
+  "3x(x - 2)(x² + 2x + 4)"
+],
+//4th question     
+  
