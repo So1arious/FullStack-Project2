@@ -3,10 +3,10 @@ window.Algebra_BANK = {
 [
   "Multiplication Before Addition",
   "8 + 4 x 3",
-  "20
+  "20"
 ],
 [
-  "Parentheses and Multiplcation",
+  "Parentheses and Multiplication",
   "(15-7) x 5 + 6",
   "46"
 ],
@@ -17,7 +17,7 @@ window.Algebra_BANK = {
 ],
 [
   "Exponents and Parentheses",
-  "5² + x (12 - 8)",
+  "5² + 3 x (12 - 8)",
   "37"
 ],
 [
@@ -31,7 +31,7 @@ window.Algebra_BANK = {
   "11"
 ],
 [
-  "Exponents and Multiplcation",
+  "Exponents and Multiplication",
   "4² x 3 - 10",
   "38"
 ],
@@ -49,6 +49,7 @@ window.Algebra_BANK = {
   "Complex Order of Operations",
   "100 / (5 x 4) + 3² x 2 - 7",
   "16"
+]
 ],
 // 2nd topic
 "Substitution": [
@@ -73,7 +74,7 @@ window.Algebra_BANK = {
   "28"
 ],
 [
-  "Substitution with Parentsheses",
+  "Substitution with Parentheses",
   "3(a + 2) - 5   Given a = 6",
   "19"
 ],
@@ -94,14 +95,15 @@ window.Algebra_BANK = {
 ],
 [
   "Substitution with Multiple Exponents",
-  "2a² + 3b²   Given a = 3, y = 2",
+  "2a² + 3b²   Given a = 3, b = 2",
   "30"
 ],
 [
   "Advanced Substitution with PEMDAS",
   "(3a²+2b) / (a-b)   Given a = 4, b = 2",
   "26"
-]  
+]
+],  
 // 3rd topic
 "Polynomial": [
 [
@@ -151,8 +153,9 @@ window.Algebra_BANK = {
 ],
 [
   "Polynomial Addition",
-  "Simplify (4a² - 7a + 2) + (a² + 5a - 6)."
+  "Simplify (4a² - 7a + 2) + (a² + 5a - 6).",
   "5a² - 2a - 4"
+]
 ],
 // 4th topic
 "Linear & Compound Inequalities": [
@@ -173,7 +176,7 @@ window.Algebra_BANK = {
 ],
 [
   "Linear Inequalities",
-  "Solve for x: 2(3a - 4) >= 8a + 6",
+  "Solve for a: 2(3a - 4) >= 8a + 6",
   "a <= -7"
 ],
 [
@@ -205,6 +208,7 @@ window.Algebra_BANK = {
   "Absolute Value Equations",
   "Solve for a: 2|4a + 3| - 7 = 15",
   "a = -7/2, 2"
+]
 ],
 // 5th topic    
 "Exponents & Radicals": [
@@ -236,7 +240,7 @@ window.Algebra_BANK = {
 [
   "Simplifying Radicals",
   "Simplify √180",
-  "6 x √5)"
+  "6 x √5"
 ],
 [
   "Simplifying Radicals",
@@ -257,6 +261,7 @@ window.Algebra_BANK = {
   "Rational Exponents",
   "Evaluate 8⁽²/³⁾",
   "4"
+]  
 ],
 // 6th topic
 "Quadratic Equations": [
@@ -283,7 +288,7 @@ window.Algebra_BANK = {
 [
   "Solving Quadratics",
   "Solve for a: 2a² - 8a + 3 = 0",
-  "a = (4 +/-  √(10)) / 2
+  "a = (4 +/-  √(10)) / 2"
 ],
 [
   "Solving Quadratics",
